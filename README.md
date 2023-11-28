@@ -2516,3 +2516,150 @@ public class ExpMgr : MonoBehaviour
 </details>
 
 ---
+
+* #10-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/Sound_Mgr.cs)) 배경음, 효과음 재생 함수 구현
+  
+<details>
+<summary>소스 코드 및 이미지</summary>
+  
+```csharp
+  public void PlayBGM(string a_FileName, float fVolume = 1.0f)
+    {
+        AudioClip a_GAudioClip = null;
+        if (m_ADClipList.ContainsKey(a_FileName) == true)
+        {
+            a_GAudioClip = m_ADClipList[a_FileName] as AudioClip;
+
+        }
+        else
+        {
+            a_GAudioClip = Resources.Load("Sounds/" + a_FileName) as AudioClip;
+            m_ADClipList.Add(a_FileName, a_GAudioClip);
+        }
+
+
+        if (m_AudioSrc == null)
+            return;
+
+        if (m_AudioSrc.clip != null && m_AudioSrc.clip.name == a_FileName)
+            return;
+
+        m_AudioSrc.clip = a_GAudioClip;
+        m_AudioSrc.volume = fVolume * m_BGMSoundVolume;
+        m_bgmVolume = fVolume;
+        m_AudioSrc.loop = true;
+        m_AudioSrc.Play();
+    }
+
+    public void PlayEffSound(string a_FileName, float fVolume = 0.3f)
+    {
+        if (m_SoundOnOff == false)
+            return;
+
+        AudioClip a_GAudioClip = null;
+        if (m_ADClipList.ContainsKey(a_FileName) == true)
+        {
+            a_GAudioClip = m_ADClipList[a_FileName] as AudioClip;
+        }
+        else
+        {
+            a_GAudioClip = Resources.Load("Sounds/" + a_FileName) as AudioClip;
+            m_ADClipList.Add(a_FileName, a_GAudioClip);
+        }
+
+        if (a_GAudioClip == null)
+            return;
+
+        if (m_SndSrcList[m_SoundCount] != null)
+        {
+            m_SndSrcList[m_SoundCount].volume = fVolume * m_EffSoundVolume;
+            m_SndSrcList[m_SoundCount].PlayOneShot(a_GAudioClip, fVolume * m_EffSoundVolume);
+            m_EffVolume[m_SoundCount] = fVolume;
+
+            m_SoundCount++;
+            if (m_EffSdCount <= m_SoundCount)
+                m_SoundCount = 0;
+        }
+    }
+
+    public void PlayGUISound(string a_FileName, float fVolume = 0.2f)
+    {//GUI 효과음 플레이 하기 위한 함수
+        if (m_SoundOnOff == false)
+            return;
+
+        AudioClip a_GAudioClip = null;
+        if (m_ADClipList.ContainsKey(a_FileName) == true)
+        {
+            a_GAudioClip = m_ADClipList[a_FileName] as AudioClip;
+        }
+        else
+        {
+            a_GAudioClip = Resources.Load("Sounds/" + a_FileName) as AudioClip;
+            m_ADClipList.Add(a_FileName, a_GAudioClip);
+        }
+
+        if (m_AudioSrc == null)
+            return;
+
+        m_AudioSrc.PlayOneShot(a_GAudioClip, fVolume * m_EffSoundVolume);
+    }
+
+```
+</details>
+
+---
+
+* #10-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/Sound_Mgr.cs)) 배경음, 효과음 음소거 및 볼륨 조절 기능 구현
+  
+<details>
+<summary>소스 코드 및 이미지</summary>
+  
+```csharp
+    public void SoundOnOff(bool a_OnOff = true) //BGM과 EFF 사운드 OnOff 조절해주는 함수
+    {
+        bool a_MuteOnOff = !a_OnOff;
+
+        if (m_AudioSrc != null)
+        {
+            m_AudioSrc.mute = a_MuteOnOff; //mute == true 끄기 mute == false 켜기
+            if (a_MuteOnOff == false)
+                m_AudioSrc.time = 0;      //처음부터 다시 플레이
+        }
+
+        for (int ii = 0; ii < m_EffSdCount; ii++)
+        {
+            if (m_SndSrcList[ii] != null)
+            {
+                m_SndSrcList[ii].mute = a_MuteOnOff;
+
+                if (a_MuteOnOff == false)
+                    m_SndSrcList[ii].time = 0;
+            }
+        }
+
+        m_SoundOnOff = a_OnOff;
+    }
+
+    //배경음은 지금 볼륨을 가져온 후에 플레이 해 준다.
+    public void EffSoundVolume(float fVolume) //EFF 사운드 볼륨 조절해주는 함수
+    {
+        for (int ii = 0; ii < m_EffSdCount; ii++)
+        {
+            if (m_SndSrcList[ii] != null)
+                m_SndSrcList[ii].volume = m_EffVolume[ii] * fVolume;
+        }
+
+        m_EffSoundVolume = fVolume;
+    }
+
+    public void BGMSoundVolume(float fVolume) //BGM 사운드 볼륨 조절해주는 함수
+    {
+        if (m_AudioSrc != null)
+            m_AudioSrc.volume = m_bgmVolume * fVolume;
+
+        m_BGMSoundVolume = fVolume;
+    }
+```
+</details>
+
+---

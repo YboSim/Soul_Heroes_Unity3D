@@ -73,3 +73,232 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 
 ## 주요 활용 기술
 ---
+* #1-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) Enum형을 이용한 캐릭터의 이동상태 결정
+
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void MoveMethodUpdate()
+    {
+        if (GameMgr.Inst.m_Enter == true)
+            return;
+
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
+
+        if (h != 0.0f || v != 0.0f)
+            m_MoveMethod = MoveMethod.KeyBoardMove;
+        else if (Input.GetMouseButtonDown(1))
+            m_MoveMethod = MoveMethod.MouseMove;
+
+        if (m_MoveMethod == MoveMethod.KeyBoardMove)
+            KeyBDMove();
+        else if (m_MoveMethod == MoveMethod.MouseMove)
+            MouseMoveUpdate();
+        else if (m_MoveMethod == MoveMethod.AttackMove)
+            AttackMoveUpdate();
+        else if (m_MoveMethod == MoveMethod.SkillMove)
+            SkillMoveUpdate();
+    }
+```
+</details>
+
+---
+* #1-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 키보드 이동 구현
+
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void KeyBDMove()
+    {
+        if (m_NavMeshAgent.isStopped == false) //마우스 이동중이였다면
+        {
+            m_NavMeshAgent.ResetPath();
+
+            if (GameMgr.Inst.m_CursorMark.activeSelf == true)
+                GameMgr.Inst.CursorMarkOff();
+        }
+
+        if(h != 0.0f || v != 0.0f)
+        {
+            m_MoveStep = new Vector3(h, 0, v);
+
+            if (v < 0.0f) // 뒤로 걷기
+            {
+                m_KBMoveSpeed = 2.0f;
+                AnimationChange("Walk");
+            }
+            else if (v > 0.0f && Input.GetButton("Run") == false &&
+                        h == 0.0f) //앞으로 걷기 
+            {
+                m_KBMoveSpeed = 3.0f;
+                AnimationChange("Walk");
+            }
+            else if(v >= 0.0f && Input.GetButton("Run") == false &&
+                        h > 0.0f) //오른쪽으로 걷기
+            {
+                m_KBMoveSpeed = 2.5f;
+                AnimationChange("Walk_R");
+            }
+            else if(v >= 0.0f && Input.GetButton("Run") == false &&
+                        h < 0.0f) //왼쪽으로 걷기
+            {
+                m_KBMoveSpeed = 2.5f;
+                AnimationChange("Walk_L");
+            }
+            else if (v > 0.0f && Input.GetButton("Run") == true &&
+                        h == 0.0f) //앞으로 달리기
+            {
+                m_KBMoveSpeed = 6.0f;
+                AnimationChange("Run");
+            }
+            else if (v > 0.0f && Input.GetButton("Run") == true &&
+                        h > 0.0f) //우측대각 달리기
+            {
+                m_KBMoveSpeed = 5.5f;
+                AnimationChange("Run_R");
+            }
+            else if (v > 0.0f && Input.GetButton("Run") == true &&
+                        h < 0.0f) //좌측대각 달리기
+            {
+                m_KBMoveSpeed = 5.5f;
+                AnimationChange("Run_L");
+            }
+
+            transform.Translate(m_MoveStep * m_KBMoveSpeed * Time.deltaTime);
+        }
+        else if (h == 0.0f && v == 0.0f)
+        {
+            AnimationChange("Idle");
+
+            m_MoveMethod = MoveMethod.Stop;
+        }
+    }
+```
+</details>
+
+---
+
+* #1-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 마우스 이동 구현
+
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void MouseMoveUpdate()
+    {
+        if(Input.GetMouseButtonDown(1) == true)
+        {
+            m_MoveMethod = MoveMethod.MouseMove;
+
+            m_MsPickPos = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if(Physics.Raycast(m_MsPickPos, out hitInfo))
+            {
+                if (hitInfo.collider.gameObject.layer == LayerMask.NameToLayer("Terrain"))
+                {//MsPickPos가 땅이면
+                    m_NavMeshAgent.SetDestination(hitInfo.point);
+
+                    GameMgr.Inst.CursorMarkOn(hitInfo.point);
+                }
+                else if(hitInfo.collider.gameObject.layer == LayerMask.NameToLayer("Object"))
+                {//MsPickPos가 오브젝트이면
+                    m_NavMeshAgent.SetDestination(hitInfo.collider.gameObject.transform.position);
+
+                    m_AttTarget = hitInfo.collider.gameObject;
+
+                    TargetCheck();
+
+                    m_MoveMethod = MoveMethod.AttackMove;
+                }
+            }
+        }
+```
+</details>
+
+---
+
+* #1-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 방향 전환
+
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void RotateUpdate()
+    {
+        if (m_SkillSlotMgr.m_Editing == true)
+            return;
+
+        if (m_MoveMethod == MoveMethod.MouseMove ||
+            m_MoveMethod == MoveMethod.AttackMove)
+            return;
+
+        if (Input.GetMouseButton(0) == true)
+        {
+            m_MouseX = Input.GetAxis("Mouse X");
+
+            transform.Rotate(0, m_MouseX * m_RotSpeed, 0, Space.World);
+        }
+    }
+
+```
+</details>
+
+---
+
+* #1-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs)) 캐릭터의 정면방향을 따라가는 카메라 이동 및 회전 구현
+
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void CamPosUpdate()
+    {
+        if (m_Player == null)
+            return;
+
+        m_TargetPos = m_Player.transform.position;
+        m_CamForward = m_Player.transform.forward;
+        //카메라 바라보는 방향과 플레이어의 바라보는 방향 일치시키기
+
+        CamZoomInOut();
+
+        //카메라 위치 보간하여 이동 및 회전
+        m_CamPos = m_TargetPos - m_CamForward * m_PlayerCamDist;
+        m_CamPos.y = m_CamPos.y + m_CamHeight;
+        transform.position = Vector3.Lerp(transform.position,
+                                m_CamPos, m_CamSpeed *Time.deltaTime);
+        
+        transform.LookAt(m_TargetPos);
+        //카메라 위치 보간하여 이동 및 회전
+    }
+
+```
+</details>
+
+---
+
+* #1-6)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs)) 마우스 스크롤 휠을 이용한 카메라 줌인,아웃
+  
+<details>
+<summary>소스 코드</summary>
+  
+```csharp
+    void CamZoomInOut()
+    {
+        float a_MouseSW = Input.GetAxis("Mouse ScrollWheel");
+        m_PlayerCamDist -= a_MouseSW * m_ZoomSpeed;
+
+        //카메라 와 플레이어간 최대,최소 거리 설정
+        if (m_PlayerCamDist > m_MaxDist)
+            m_PlayerCamDist = m_MaxDist;
+        else if (m_PlayerCamDist < m_MinDist)
+            m_PlayerCamDist = m_MinDist;
+        //카메라 와 플레이어간 최대,최소 거리 설정
+    }
+```
+</details>
+
+---

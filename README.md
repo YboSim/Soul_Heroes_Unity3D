@@ -57,7 +57,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 |Mage|매직클로|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/96e52f18-b461-4770-8f37-45c451dadbc3" width="100" height="100"/>|마력을 모아 단일대상 적에게 큰 피해를 입히는 액티브형 스킬|
 |Mage|메테오샤워|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/31d18db0-7bba-4118-be12-c4c0bbc36367" width="100" height="100"/>|하늘에서 메테오를 소환해 다중대상 적에게 피해를 입히는 액티브형 스킬|
 |Healer|힐|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/438c38a8-6755-47c1-9eb3-b18ab248277c" width="100" height="100"/>|자신을 포함한 파티원의 체력을 일정량 회복시키는 버프형 스킬|
-|Healer|매혹|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/75e36021-3f8f-423c-8b85-7c26fadc903d" width="100" height="100"/>|단일대상 적(몬스터 적용)을 매혹시켜 일정시간 방어력을 낮추며 피해를 입힌다|
+|Healer&nbsp;&nbsp;&nbsp;|매혹|&nbsp;<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/75e36021-3f8f-423c-8b85-7c26fadc903d" width="100" height="100"/>&nbsp;|단일대상 적(몬스터 적용)을 매혹시켜 일정시간 방어력을 낮추며 피해를 입힌다|
 
 - 4가지 몹들과 보스몹 소개<br>
 

@@ -1,0 +1,286 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16309 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/게임프로그래밍/Pp/SoulHeros_/SoulHeros
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60121
+Successfully changed project path to: D:/게임프로그래밍/Pp/SoulHeros_/SoulHeros
+D:/게임프로그래밍/Pp/SoulHeros_/SoulHeros
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 48.12 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1 (40eb3a945986)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/게임프로그래밍/Pp/SoulHeros_/SoulHeros/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009233 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 44.99 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.524 seconds
+Domain Reload Profiling:
+	ReloadAssembly (524ms)
+		BeginReloadAssembly (79ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (346ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (89ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (194ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007433 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 44.18 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1171ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (964ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (612ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (378ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 65 unused Assets / (423.8 KB). Loaded Objects now: 3830.
+Memory consumption went from 168.2 MB to 167.8 MB.
+Total: 3.176300 ms (FindLiveObjects: 0.253600 ms CreateObjectMapping: 0.145700 ms MarkObjects: 2.549400 ms  DeleteObjects: 0.227000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 351493.172272 seconds.
+  path: Assets/Resources/Slayer_Boss.prefab
+  artifactKey: Guid(cba5435f5fab5e644855aa70ed5e17b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Slayer_Boss.prefab using Guid(cba5435f5fab5e644855aa70ed5e17b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Failed to create MaterialEnum, enum UnityEditor.Rendering.HighDefinition.TransparentCullMode not found
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialEnumDrawer:.ctor (string)
+System.Reflection.RuntimeConstructorInfo:InternalInvoke (object,object[],bool)
+System.Reflection.RuntimeConstructorInfo:DoInvoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.RuntimeConstructorInfo:Invoke (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.RuntimeType:CreateInstanceImpl (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[],System.Threading.StackCrawlMark&)
+System.Activator:CreateInstance (System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[])
+System.Activator:CreateInstance (System.Type,object[])
+UnityEditor.MaterialPropertyHandler:CreatePropertyDrawer (System.Type,string)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+Failed to create material drawer Enum with arguments 'UnityEditor.Rendering.HighDefinition.TransparentCullMode'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+ -> (artifact id: '6a18a5100e9f18edd7d79a1869c0430c') in 0.498440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.163911 seconds.
+  path: Assets/08.Assets/Hero
+  artifactKey: Guid(8a97385b1f3abe841a6f5555f51be029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/08.Assets/Hero using Guid(8a97385b1f3abe841a6f5555f51be029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad03929f7c6c5b060f3f510e74a3f9a5') in 0.008056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.779198 seconds.
+  path: Assets/08.Assets/Hero/Characters/RedKnight
+  artifactKey: Guid(bb87efb60e840354784e49d0be363fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/08.Assets/Hero/Characters/RedKnight using Guid(bb87efb60e840354784e49d0be363fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef9cbf0e83cb6e197543afced301dfb') in 0.007659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.742390 seconds.
+  path: Assets/08.Assets/Hero/Characters/RedKnight/Prefab
+  artifactKey: Guid(0e7560a4fec4c0e47815b6a777346915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/08.Assets/Hero/Characters/RedKnight/Prefab using Guid(0e7560a4fec4c0e47815b6a777346915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141684035e28f8f3479365d25bc4bf43') in 0.014388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.635796 seconds.
+  path: Assets/08.Assets/Hero/Characters/RedKnight/Prefab/M05
+  artifactKey: Guid(f03ef45e2ff66ee45aa8d00fd9745ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/08.Assets/Hero/Characters/RedKnight/Prefab/M05 using Guid(f03ef45e2ff66ee45aa8d00fd9745ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff071326b970bd117c69b9ba01b7684a') in 0.007387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.655033 seconds.
+  path: Assets/08.Assets/Hero/Characters/RedKnight/Prefab/M05/M05.prefab
+  artifactKey: Guid(007f5bdc3fac8f543b83ae60517cd050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/08.Assets/Hero/Characters/RedKnight/Prefab/M05/M05.prefab using Guid(007f5bdc3fac8f543b83ae60517cd050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bb472d6fe5961c85c469784d2eed6c') in 0.048208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.662939 seconds.
+  path: Assets/03.Prefabs/Monster/Slime.prefab
+  artifactKey: Guid(9ecb7921f0145604680b89f18591f29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Slime.prefab using Guid(9ecb7921f0145604680b89f18591f29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976369753e23f23bec7ce3c23c219db1') in 0.062686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.402780 seconds.
+  path: Assets/03.Prefabs/Monster/Turtle.prefab
+  artifactKey: Guid(0f6f4404dcc8710478fde5f064d7f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Turtle.prefab using Guid(0f6f4404dcc8710478fde5f064d7f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de04ea28fa5ffab8386408bfc15e6ad3') in 0.047518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.864608 seconds.
+  path: Assets/03.Prefabs/Monster/Turtle.prefab
+  artifactKey: Guid(0f6f4404dcc8710478fde5f064d7f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Turtle.prefab using Guid(0f6f4404dcc8710478fde5f064d7f90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb36c298882f98fabb70c583faecd63') in 0.032963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.594812 seconds.
+  path: Assets/03.Prefabs/Monster/Slyaer_Boss.prefab
+  artifactKey: Guid(ccc7a3336f4812649a3e3068f663fc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Slyaer_Boss.prefab using Guid(ccc7a3336f4812649a3e3068f663fc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a9acb98bdb3b6287876e3bd85408e1') in 0.116156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077897 seconds.
+  path: Assets/03.Prefabs/Monster/Slime.prefab
+  artifactKey: Guid(9ecb7921f0145604680b89f18591f29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Slime.prefab using Guid(9ecb7921f0145604680b89f18591f29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778750a18631399d7a3a3e5a3ab6cb7b') in 0.024766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.368634 seconds.
+  path: Assets/03.Prefabs/Monster/Orc.prefab
+  artifactKey: Guid(35a83f605d7745f438aaf609ef0aa5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Orc.prefab using Guid(35a83f605d7745f438aaf609ef0aa5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2636037c27f8b9edd872c209b55461fc') in 0.070044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.356555 seconds.
+  path: Assets/03.Prefabs/Monster/Golem.prefab
+  artifactKey: Guid(026add9eea265734b90e48664ed4450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Golem.prefab using Guid(026add9eea265734b90e48664ed4450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96df01c4ee4a1124bb0e9abb6faa20e2') in 0.052069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.060753 seconds.
+  path: Assets/03.Prefabs/Monster/Golem.prefab
+  artifactKey: Guid(026add9eea265734b90e48664ed4450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Prefabs/Monster/Golem.prefab using Guid(026add9eea265734b90e48664ed4450e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b256ca56b6bf1eaf7d55cdc199a73932') in 0.049403 seconds 

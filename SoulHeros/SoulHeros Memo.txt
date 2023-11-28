@@ -1,0 +1,3 @@
+Dash기 예외처리
+
+MouseMove 시 Bake안된곳 예외처리

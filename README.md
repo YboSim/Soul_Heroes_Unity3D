@@ -108,8 +108,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #1-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 키보드 이동 구현
 
 <details>
-<summary>소스 코드</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![1-2](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/dd8c4c83-c99e-436c-9a43-4bed79cbf90e)
+
 ```csharp
     void KeyBDMove()
     {
@@ -184,7 +186,9 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #1-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 마우스 이동 구현
 
 <details>
-<summary>소스 코드</summary>
+<summary>소스 코드 및 동영상</summary>
+
+![1-3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/b17d963e-a4c2-448c-a824-7a1eb7daf4f6)
   
 ```csharp
     void MouseMoveUpdate()
@@ -223,8 +227,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #1-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) 캐릭터 방향 전환
 
 <details>
-<summary>소스 코드</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![1-4](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/ab90c631-e52d-4e4c-9de1-e2e126f78374)
+
 ```csharp
     void RotateUpdate()
     {
@@ -283,8 +289,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #1-6)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs)) 마우스 스크롤 휠을 이용한 카메라 줌인,아웃
   
 <details>
-<summary>소스 코드</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![1-6](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/a3279f01-4a3e-4e31-80a3-0385de2c6542)
+
 ```csharp
     void CamZoomInOut()
     {

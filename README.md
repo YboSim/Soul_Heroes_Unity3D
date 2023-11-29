@@ -315,7 +315,9 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
   
 <details>
 <summary>소스 코드 및 이미지</summary>
-  
+
+  ![2-1](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/d31d6fbe-1edc-4dd3-8dc5-66544d7a98b6)
+
 ```csharp
     public void EnemySensor()
     {
@@ -421,8 +423,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #2-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs))ShaderGraph를 이용한 적 스캔 시각적 효과 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![2-2](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/15363666-ec79-4bce-b987-f7b8c966be15)
+
 ```csharp
     void Scanner()
     {
@@ -447,8 +451,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #2-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs))EnemyBtn을 누를 시 버튼에 담긴 정보를 가져와 대상 공격 기능 구현
   
 <details>
-<summary>소스 코드</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![2-3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/a5a97530-89d5-49f5-98e7-91b15e981a88)
+
 ```csharp
     public void Attack(GameObject a_Target) //Enemy버튼을 눌러 공격한 메서드
     {
@@ -494,8 +500,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #2-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs))공격 시 자신이 공격한 타겟의 시각화를 위해 타겟 오브젝트 위의 NameText에 타겟표시 해주는 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![2-4](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/2c891f75-6f66-41dc-aaa5-5ccaa8265ad2)
+
 ```csharp
     void TargetCheck()
     {
@@ -521,7 +529,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #2-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/CameraCtrl.cs))애니메이션 이벤트 함수를 통해 소울 소환 공격 및 타겟에게 데미지를 입히는 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void Attack_Event() //애니메이션 이벤트 함수
@@ -701,7 +709,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 인게임 시작 시 아이템 전체 데이터베이스, 보유 아이템, 착용아이템 Load 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     IEnumerator Load()
@@ -745,7 +753,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 아이템 획득 및 착용에 따른 보유 아이템 리스트 및 각 아이템 정보 저장
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void Save()
@@ -764,8 +772,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 원하는 아이템 종류 나열해 보여주는 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![3-3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/bc8841d1-2a86-40e6-8f09-f2a69601670f)
+
 ```csharp
     public void TabClick(string a_TabName)
     {
@@ -861,8 +871,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 아이템에 마우스포인트를 가져다 댔을 때 해당 아이템의 정보 표시해주는 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![3-4](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/1aca1bdc-9a7f-4a63-a62d-0060cc058e41)
+
 ```csharp
     bool IsItemSlot(Item a_Item) //아이템위에 마우스가 있는지 확인하는 함수
     {
@@ -937,8 +949,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 장비 착용 및 해제
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![3-5](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/da7db015-7021-460a-afca-985405844050)
+
 ```csharp
     public void SlotClick(int a_SlotNum)
     {
@@ -1098,8 +1112,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #3-6)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/ItemPanel.cs)) 아이템 획득
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![3-6](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/2060cd7e-ac36-4bed-a902-0dd07dbb4896)
+
 ```csharp
     public void GainItem(MonsterCtrl a_Monster)
     {
@@ -1153,6 +1169,8 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 <details>
   
 <summary>동영상</summary>
+![4-1 S](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/f37c48ea-35c3-4bd5-bfc1-42aab2397d8f)
+![4-1 A](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/3f53d973-cd80-4c24-b2b0-c7ecf80a6816)
 
 </details>
 
@@ -1163,6 +1181,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 <details>
   
 <summary>동영상</summary>
+![4-2 MC](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/c65cc064-d54e-443d-a385-1be3f139c703)
 
 </details>
 

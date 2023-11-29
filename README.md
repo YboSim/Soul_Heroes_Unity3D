@@ -1169,8 +1169,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 <details>
   
 <summary>동영상</summary>
-![4-1 S](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/f37c48ea-35c3-4bd5-bfc1-42aab2397d8f)
-![4-1 A](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/3f53d973-cd80-4c24-b2b0-c7ecf80a6816)
+
+![4-1 A](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/71fb6350-5130-43cd-841c-ae801885b7f5)
+
+![4-1 S](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/33313926-1c51-4fcd-b852-726753265951)
 
 </details>
 
@@ -1181,7 +1183,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 <details>
   
 <summary>동영상</summary>
-![4-2 MC](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/c65cc064-d54e-443d-a385-1be3f139c703)
+
+![4-2 MC](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/f7d9f356-b7bb-45a2-aa07-d1ab2fe857a9)
+
+![4-2 MS](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/599c2042-b47c-40e5-a3d0-34b7a1aa7e47)
 
 </details>
 
@@ -1193,6 +1198,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
   
 <summary>동영상</summary>
 
+![4-3 H](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/232f8654-3027-4bca-8bfa-f8f45c94ea86)
+
+![4-3 C](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/12c2f0c5-391d-4886-8dd5-351898215f0d)
+
 </details>
 
 ---
@@ -1200,8 +1209,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #4-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/ManagerBox/SkillPanel.cs)) 스킬 장착
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![4-4](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/ba911c14-cc35-49a3-a420-a609e5e41bba)
+
 ```csharp
     void UseSkillBtnClick(GameObject a_Skill)
     {
@@ -1228,8 +1239,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #4-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Skill/SkillSlotMgr.cs)) 스킬창 편집 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![4-5](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/50f3dcce-9bc4-4e9e-ad56-25e873daffd2)
+
 ```csharp
     void Update()
     {
@@ -1343,6 +1356,8 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
   
 <summary>동영상</summary>
 
+![5-1](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/656a0139-7ef3-497f-8ce0-ee4bebf31de3)
+
 </details>
 
 ---
@@ -1350,8 +1365,8 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #5-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Soul/SoulCtrl.cs)) 소울 이동
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드</summary>
+
 ```csharp
     void Update()
     {
@@ -1383,7 +1398,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #5-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Soul/SoulCtrl.cs)) 소울 공격
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     IEnumerator Attack()
@@ -1412,7 +1427,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs)) 보스 상태 체크
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     void Update()
@@ -1473,7 +1488,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs)) 보스의 타겟이 없는 Wandering상태 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public IEnumerator Wandering()
@@ -1508,7 +1523,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs)) 보스의 타겟이 존재할때 보스상태
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     void BossStateUpdate()
@@ -1601,7 +1616,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs))보스의 기본공격후 딜레이를 주고 3번째 기본공격마다 랜덤패턴을 발생시키기 위한 애니메이션 이벤트 함수
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void AttackEndEvent() //기본공격후 딜레이를 주고 3번째 기본공격마다 랜덤패턴을 발생시키기 위한 이벤트 함수
@@ -1670,8 +1685,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs))보스패턴1
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![6-5](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/7529152f-dd23-4422-a456-0f1a1fab6502)
+
 ```csharp
     void Pattern1()
     {
@@ -1718,8 +1735,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #6-6)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/BossCtrl.cs))보스패턴2
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![6-6](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/efa0d2cd-7602-4c25-bec7-2e8b8b509b95)
+
 ```csharp
     void Pattern2()
     {
@@ -1771,8 +1790,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #7-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PartySystemMgr.cs)) 파티 초대 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![7-1](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/8351cff5-17ca-45b9-8015-bbf3ad9eec97)
+
 ```csharp
     public void InviteBtnClick()
     {
@@ -1802,8 +1823,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #7-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PartySystemMgr.cs)) 파티초대(PunRPC를 통해 Local PC에서 Local이 아닌 PC들에게 초대함수 호출)
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드 및 동영상</summary>
   
+  ![7-2](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/7c1bd7a8-10d2-4262-bd08-631394cdec2d)
+
 ```csharp
     [PunRPC]
     void RecieveInviteMsg(Player a_Inviter) //Local이아닌 초대를 받는Pc에서 호출 될 RPC 함수
@@ -1832,8 +1855,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #7-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PartySystemMgr.cs)) 파티 수락(PunRPC를 통해 파티를 보낸Pc와 초대를 받은Pc 모두 파티멤버 리스트 갱신)
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드 및 동영상</summary>
   
+  ![7-3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/efc27658-89d0-42ac-84ea-a82728aca6aa)
+
 ```csharp
     public void InviteAcceptRejectBtnClick(bool a_Accept)
     {
@@ -1897,8 +1922,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #8-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/ChatMgr.cs)) 채팅 기능 구현 
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![8-1](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/359c4fc1-eb43-4d1a-a1e6-275ab0951427)
+
 ```csharp
     void Update()
     {
@@ -1962,8 +1989,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 * #8-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/ExpMgr.cs)) 레벨 관리 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![8-2,3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/ca45a1cd-97b9-4344-ad7f-ee76303c92c1)
+
 ```csharp
 public class ExpMgr : MonoBehaviour
 {
@@ -2033,8 +2062,10 @@ public class ExpMgr : MonoBehaviour
 * #8-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/UI/DamageText.cs)) 타겟 공격 시 데미지,보상 텍스트 띄워주기 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>소스 코드 및 동영상</summary>
+
+  ![8-2,3](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/7aac1cf0-8dd0-46a0-8549-821f02cf4725)
+
 ```csharp
     void Start()
     {
@@ -2098,7 +2129,7 @@ public class ExpMgr : MonoBehaviour
 * #8-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/UI/BillBoard.cs)) NameText등의 UI 빌보드 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     void Start()
@@ -2119,7 +2150,7 @@ public class ExpMgr : MonoBehaviour
 * #8-5)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Monster/HuntingGround.cs)) OnTriggerEnter,Exit 함수를 이용한 캐릭터 위치 표시 및 BGM 변경 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     private void OnTriggerEnter(Collider coll)
@@ -2235,7 +2266,7 @@ public class ExpMgr : MonoBehaviour
 * #8-6)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/GameMgr.cs)) '캐릭터 위치 표시 메시지' 리스트 관리 및 순차적 표시 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     IEnumerator MsgController()
@@ -2276,7 +2307,7 @@ public class ExpMgr : MonoBehaviour
 * #9-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PlayfabMgr.cs)) PlayFab을 통한 로그인,아웃 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void Login(string a_Id, string a_Pw)
@@ -2363,7 +2394,7 @@ public class ExpMgr : MonoBehaviour
 * #9-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PlayfabMgr.cs)) PlayFab유저 정보 저장
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void SetPlayerData(string a_Key, string a_Value)
@@ -2388,7 +2419,7 @@ public class ExpMgr : MonoBehaviour
 * #9-3)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PlayfabMgr.cs)) PlayFab에 저장된 유저정보 불러오기 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void GetPlayerData()
@@ -2416,7 +2447,7 @@ public class ExpMgr : MonoBehaviour
 * #9-4)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/PhotonInit.cs)) Photon을 통한 룸 생성 및 참가등의 서버 관리
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public override void OnConnectedToMaster() //ConnectUsingSettings 성공 콜백 함수
@@ -2529,8 +2560,10 @@ public class ExpMgr : MonoBehaviour
 * #9-5) 캐릭터 생성 씬
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>동영상</summary>
+
+  ![9-5](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/55c3ba39-891e-4e56-adb8-f41fc5b33de2)
+
 </details>
 
 ---
@@ -2538,8 +2571,10 @@ public class ExpMgr : MonoBehaviour
 * #9-6) 상점 씬
   
 <details>
-<summary>소스 코드 및 이미지</summary>
-  
+<summary>동영상</summary>
+
+  ![9-6](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/9bc65a5b-8421-40af-b849-7b12f2129b77)
+
 </details>
 
 ---

@@ -72,6 +72,7 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 |<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/9fad8130-ab08-40fe-9b36-4ebabeefe073" width="150" height="200"/>|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/63c552d2-e4d6-42ea-a138-686f2c0a5d19" width="150" height="200"/>|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/cf91c0f9-d9a0-4732-80f4-e5c7478a3c54" width="150" height="200"/>|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/cf084526-4345-4711-9338-edaecfead013" width="150" height="200"/>|<img src="https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/c98a87d4-8186-4d4a-b788-f20f755e8274" width="150" height="200"/>
 
 ## 주요 활용 기술
+- 동영상이 로드하는데 시간이 다소 소요될 수 있으니 조금만 기다려주세요.
 ---
 * #1-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Hero/HeroCtrl.cs)) Enum형을 이용한 캐릭터의 이동상태 결정
 
@@ -2582,7 +2583,7 @@ public class ExpMgr : MonoBehaviour
 * #10-1)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/Sound_Mgr.cs)) 배경음, 효과음 재생 함수 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
   public void PlayBGM(string a_FileName, float fVolume = 1.0f)
@@ -2674,7 +2675,7 @@ public class ExpMgr : MonoBehaviour
 * #10-2)([Script](https://github.com/YboSim/Soul_Heroes_Unity3D/blob/main/SoulHeros/Assets/02.Scripts/Mgr/Sound_Mgr.cs)) 배경음, 효과음 음소거 및 볼륨 조절 기능 구현
   
 <details>
-<summary>소스 코드 및 이미지</summary>
+<summary>소스 코드</summary>
   
 ```csharp
     public void SoundOnOff(bool a_OnOff = true) //BGM과 EFF 사운드 OnOff 조절해주는 함수

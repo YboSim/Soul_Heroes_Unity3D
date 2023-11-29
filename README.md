@@ -109,7 +109,9 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 
 <details>
 <summary>소스 코드 및 동영상</summary>
-  
+
+  ![1-2](https://github.com/YboSim/Soul_Heroes_Unity3D/assets/142956423/dd8c4c83-c99e-436c-9a43-4bed79cbf90e)
+
 ```csharp
     void KeyBDMove()
     {

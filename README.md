@@ -20,10 +20,10 @@ Photon Pun2를 이용한 3D MORPG 게임입니다.
 
 ## 빌드 파일 및 유튜브 영상
 - [유튜브 포트폴리오 소개 영상](https://youtu.be/LcHh5sz5Mos)
-- [구글 드라이브 다운로드 링크(빌드)]
-- [구글 드라이브 다운로드 링크(유니티)]
-- [네이버 MyBox 다운로드 링크(빌드)]
-- [네이버 MyBox 다운로드 링크(유니티)]
+- [구글 드라이브 다운로드 링크(빌드)](https://drive.google.com/file/d/1bpzeQoqkOEFH81ebATwdMWs-jXWZscmd/view?usp=sharing)
+- [구글 드라이브 다운로드 링크(유니티)](https://drive.google.com/file/d/1kaGs89r7C-x-TekvqKcXx1syqCN2qbbL/view?usp=sharing)
+- [네이버 MyBox 다운로드 링크(빌드)](http://naver.me/5BknEOpc)
+- [네이버 MyBox 다운로드 링크(유니티)](http://naver.me/xY9zlPfl)
   
 ## 게임 설명
 
